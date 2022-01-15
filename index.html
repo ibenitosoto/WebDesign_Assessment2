@@ -31,7 +31,45 @@
         </div>
 
         <div class="forthRow">
+            <form action="/action_page.php">
+                <p>Select a country:</p>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">Ireland</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">France</label><br>
+            </form>
 
+            <p>The following is a city in that country</p>
+
+            <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Select a country</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">Dublin</a>
+                <a href="#">Paris</a>
+            </div>
+            </div>
+
+            <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+                }
+            }
+            }
+            </script>
         </div>
 
         <div class="fifthRow">

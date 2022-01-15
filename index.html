@@ -86,20 +86,22 @@
         <div class="forthRow">
             <form action="/action_page.php">
                 <p>Select a country:</p>
-                <input type="radio" id="html" name="fav_language" value="HTML">
+                <input type="radio" id="Ireland" name="country" value="Ireland">
                 <label for="html">Ireland</label><br>
-                <input type="radio" id="css" name="fav_language" value="CSS">
+                <input type="radio" id="France" name="country" value="France">
                 <label for="css">France</label><br>
             </form>
 
             <p>The following is a city in that country</p>
 
             <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Select a country</button>
+            <button id="dropdownButton" onclick="myFunction()" class="dropbtn">Select a country</button>
             <div id="myDropdown" class="dropdown-content">
                 <a href="#">Dublin</a>
                 <a href="#">Paris</a>
             </div>
+
+            <button id="submitButton" onclick="submitFunction()"> Submit </button>
             </div>
 
             <script>
@@ -121,7 +123,22 @@
                 }
                 }
             }
+
             }
+            function submitFunction() {
+            var button1 = document.getElementById("Ireland").value
+            var button2 = document.getElementById("France").value
+
+            if (button1 === "Ireland") {
+                document.getElementById("dropdownButton").value = "Ireland";
+            }
+
+            if (button1 === "France") {
+                document.getElementById("dropdownButton").value = "France";
+            }
+
+
+
             </script>
         </div>
 

@@ -1,4 +1,4 @@
-
+/* 
     //hover over the big images to show text on the left hand side and change opacity to 1
 $("#hoverMe1").hover(function () {
     $("#hoverMe1").css("background-color", "yellow");
@@ -24,5 +24,5 @@ function drop(ev) {
     var data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
 }
-
+ */
 

@@ -137,7 +137,7 @@
     </div>
 
     <script>
-         $("#hoverMe1").hover(function () {
+         /* $("#hoverMe1").hover(function () {
             $("#hoverMe1").css("background-color", "yellow");
             $("#hoverMe2").css("background-color", "yellow");
         }),
@@ -145,8 +145,28 @@
         $("#hoverMe2").hover(function () {
             $("#hoverMe1").css("background-color", "yellow");
             $("#hoverMe2").css("background-color", "yellow");
-        })
+        }) */
 
+        $("#hoverMe1").hover(function () {
+
+        $("#hoverMe1").css("background-color", "yellow");
+        $("#hoverMe2").css("background-color", "yellow");
+        $("#hoverMe1").css("color", "magenta");
+        $("#hoverMe2").css("color", "magenta");
+        $("#hoverMe2").css("color", "magenta");
+        $("#hoverMe1").css("font-size", "4em");
+        $("#hoverMe2").css("font-size", "4em");
+    },
+
+        function () {
+            $("#hoverMe1").css("background-color", "magenta");
+            $("#hoverMe2").css("background-color", "magenta");
+            $("#hoverMe1").css("color", "yellow");
+            $("#hoverMe2").css("color", "yellow");
+            $("#hoverMe1").css("font-size", "2em");
+            $("#hoverMe2").css("font-size", "2em");
+        });
+        
     </script>
 
 

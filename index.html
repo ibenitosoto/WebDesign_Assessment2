@@ -14,6 +14,38 @@
     <div class="wrappers">
         <div class="firstRow">
             <h1>Ignacio Benito Soto</h1>
+
+            <canvas id="myCanvas" width="500" height="200"></canvas>
+                       
+            <script type="text/javascript">
+
+                var canvas = document.getElementById("myCanvas");
+                var context = canvas.getContext("2d");
+
+
+                function draw() {
+
+   
+                    var lingrad = context.createLinearGradient(0,0,0,100);
+                    lingrad.addColorStop (0, 'red');
+                    lingrad.addColorStop (0.25, 'yellow');
+                    lingrad.addColorStop (0.5, 'green');
+                    lingrad.addColorStop (0.75, 'blue');
+                    lingrad.addColorStop (1, 'violet');
+
+                    context.beginPath();
+                    context.arc(288, 75, 70, 0, Math.PI, false);
+                    context.closePath();
+                    context.lineWidth = 5;
+                    context.fillStyle = lingrad;
+                    context.fill();
+                    context.strokeStyle = '#550000';
+                    context.stroke();
+                }
+
+                draw();
+
+            </script>
         </div>
 
         <div class="secondRow">

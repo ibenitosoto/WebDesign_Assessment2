@@ -27,8 +27,29 @@
         </div>
 
         <div class="thirdRow">
-
+            <p id="pOn">ON</p>
+            <p id="pOff">OFF</p>
         </div>
+
+        <script>
+            $(document).ready(function() {
+                $("#pOn").click(function(){
+                $("#pOff").show();
+                $("#pOn").hide();
+                
+            });
+        });
+            $(document).ready(function() {
+                $("#pOff").click(function(){
+                $("#pOn").show();
+                $("#pOff").hide(); 
+                
+            });
+        });
+
+
+        </script>
+
 
         <div class="forthRow">
             <form action="/action_page.php">

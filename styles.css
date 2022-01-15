@@ -39,6 +39,9 @@ h1 {
 .thirdRow {
     background-color: rgb(217, 233, 232);
     height: 300px;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
 }
 
 .forthRow {
@@ -104,3 +107,17 @@ img {
   .dropdown a:hover {background-color: #ddd;}
   
   .show {display: block;}
+
+  #pOn {
+      height: 200px;
+      width: 200px;
+      background-color: green;   
+  }
+
+  #pOff {
+    display: none;
+    margin-left: 400px;
+    height: 200px;
+    width: 200px;
+    background-color: red; 
+}
